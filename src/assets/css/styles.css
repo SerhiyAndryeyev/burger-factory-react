@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #2A2A2A;
+  letter-spacing: 0px;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+.App-title {
+  font: normal normal 900 64px/95px Poppins;
+}
+.App-subtitle {
+  font: normal normal bold 24px/35px Poppins;
+}
+.App-text {
+  font: normal normal normal 18px/27px Poppins;
+}
+.App-button {
+  background: #00B3FA;
+  border-radius: 10px;
+  font: normal normal bold 18px/27px Poppins;
+  outline: none;
+  border: none;
+  padding: 9px 32px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.App-button:hover {
+  background: #0098F7;
+}
+.App-header {
+  padding: 29px 284px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  position: relative;
+  z-index: 10;
+}
+.App-header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.App-header__container-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.App-header__logo {
+  height: 67px;
+  margin-right: 107px;
+}
+.App-menu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.App-menu__item {
+  font: normal normal bold 18px/27px Poppins;
+  text-transform: uppercase;
+  margin-right: 70px;
+}
+.App-burgermenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  cursor: pointer;
+}
+.App-burgermenu-active {
+  transform: translateX(10px);
+}
+.App-burgermenu-active span:nth-child(1) {
+  transform: rotate(45deg) translateY(22.3px);
+}
+.App-burgermenu-active span:nth-child(2) {
+  display: none;
+}
+.App-burgermenu-active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-22.3px);
+}
+.App-burgermenu-wrapper {
+  margin-left: 40px;
+}
+.App-burgermenu-wrapper .App-menu__list {
+  display: none;
+  flex-direction: column;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+  position: absolute;
+  z-index: 200;
+  top: 106px;
+  left: 0;
+}
+.App-burgermenu-wrapper .App-menu__item {
+  margin-right: 0;
+}
+.App-burgermenu-wrapper .App-menu__item a {
+  display: block;
+  padding: 20px 20px;
+  position: relative;
+  z-index: 2000;
+}
+.App-burgermenu span {
+  height: 4px;
+  width: 40px;
+  background: #2a2a2a;
+  transition: 0.2s all;
+}
+.App-home {
+  background: linear-gradient(104deg, #00E4FE, #008BF6);
+  width: 100%;
+  min-height: 604px;
+  padding: 142px 284px 0;
+  position: relative;
+}
+.App-home::after {
+  content: "";
+  display: block;
+  background: #ffffff;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 205px;
+  clip-path: polygon(100% 35%, 0% 100%, 100% 100%);
+}
+.App-home button {
+  position: relative;
+  padding: 8px 26px;
+  background: #F6E224;
+  z-index: 7;
+}
+.App-home button:hover {
+  background: #EE9C10;
+}
+.App-home__title {
+  position: relative;
+  font: normal normal 900 84px/125px Poppins;
+  z-index: 7;
+}
+.App-home__subtitle {
+  position: relative;
+  font: normal normal bold 24px/35px Poppins;
+  margin: 20px 0;
+  z-index: 7;
+}
+.App-home__burger {
+  position: absolute;
+  height: 646px;
+  top: 49px;
+  right: 284px;
+  z-index: 2;
+}
+.App-ingredients {
+  padding: 240.81px 284px 0;
+}
+.App-ingredients__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.App-ingredients__subtitle {
+  text-align: center;
+  max-width: 690px;
+  margin: 0 auto;
+}
+.App-ingredients div.App-ingredients__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 50px 0;
+  height: 250px;
+  padding: 0 143px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  position: relative;
+}
+.App-ingredients div.App-ingredients__container-wrapper {
+  position: relative;
+}
+.App-ingredients div.App-ingredients__container-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  height: 100%;
+  width: 141px;
+  left: -1px;
+  top: 0;
+  z-index: 2;
+}
+.App-ingredients div.App-ingredients__container-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  height: 100%;
+  width: 141px;
+  right: -1px;
+  top: 0;
+  z-index: 2;
+}
+.App-ingredients div.App-ingredients__container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.App-ingredients div.App-ingredients__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 229px !important;
+  height: 242px;
+  text-align: center;
+  padding: 20px 39px;
+  margin-right: 52px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 26px;
+  background: #ffffff;
+  user-select: none;
+}
+.App-ingredients div.App-ingredients__card:last-child {
+  margin-right: 0;
+}
+.App-ingredients__img {
+  height: 152px;
+}
+.App-ingredients__name {
+  font: normal normal bold 18px/27px Poppins;
+  text-transform: capitalize;
+}
+.App-ingredients__text {
+  text-align: center;
+  max-width: 65%;
+  margin: 0 auto;
+}
+.App-thestory {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 150px 284px;
+}
+.App-thestory__container {
+  flex: 1 1 calc(50% + 50px);
+  padding-right: 50px;
+}
+.App-thestory__title {
+  margin-bottom: 20px;
+}
+.App-thestory__subtitle {
+  margin-bottom: 50px;
+}
+.App-thestory__img {
+  flex: 1 1 50%;
+  background: url("../../../public/thestory.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+}
+.App-burgers {
+  text-align: center;
+  padding: 0 284px;
+}
+.App-burgers__title {
+  margin-bottom: 50px;
+}
+.App-burgers__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: -16px;
+  margin-bottom: 50px;
+}
+.App-burgers__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 33.3333333333%;
+  margin-right: 16px;
+  padding: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 26px;
+  background: #ffffff;
+}
+.App-burgers__img {
+  height: 207px;
+  margin: 61px 0 42px;
+}
+.App-burgers__details {
+  align-self: flex-end;
+  font: normal normal bold 18px/27px Poppins;
+  color: #008BF6;
+  cursor: pointer;
+  width: fit-content;
+}
+.App-burgers__ingredient {
+  margin-top: 10px;
+  font: normal normal normal 14px/21px Poppins;
+}
+.App-burgers__ingredient-wrapper {
+  display: none;
+  align-self: flex-start;
+  text-align: left;
+  margin-top: 12px;
+}
+.App-burgers__ingredientTitle {
+  font: normal normal bold 14px/21px Poppins;
+}
+.App-location {
+  padding: 150px 530px;
+  text-align: center;
+}
+.App-location__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+}
+.App-location__text {
+  font: normal normal normal 24px/35px Poppins;
+}
+.App-location__map {
+  position: relative;
+}
+.App-location__img {
+  width: 100%;
+}
+.App-location__loc {
+  width: 36px;
+}
+.App-location__loc-wrapper {
+  top: 35.5%;
+  left: 39%;
+  background: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.App-footer {
+  background: #F5F5F5;
+  padding: 15px 284px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.App-footer__logo {
+  height: 67px;
+}
+.App-footer__info {
+  text-align: right;
+}
+.App-footer__boldtext {
+  font: normal normal bold 14px/21px Poppins;
+}
+.App-footer__text {
+  margin-top: 5px;
+  font: normal normal normal 14px/21px Poppins;
+}
+
+/*# sourceMappingURL=styles.css.map */

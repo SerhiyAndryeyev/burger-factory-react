@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+body, *
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Poppins", sans-serif
+    color: #2A2A2A
+    letter-spacing: 0px
+
+body, html
+    overflow-x: hidden
+
+a
+    color: #2a2a2a
+    text-decoration: none
+
+.App
+
+    &-title
+        font: normal normal 900 64px/95px Poppins
+
+    &-subtitle
+        font: normal normal bold 24px/35px Poppins
+
+    &-text
+        font: normal normal normal 18px/27px Poppins
+
+    &-button
+        background: #00B3FA
+        border-radius: 10px
+        font: normal normal bold 18px/27px Poppins
+        outline: none
+        border: none
+        padding: 9px 32px
+        cursor: pointer
+        transition: 0.2s all
+
+        &:hover
+            background: #0098F7
+
+    &-header
+        padding: 29px 284px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        background: #ffffff
+        box-shadow: 0px 3px 6px #00000029
+        position: relative
+        z-index: 10
+
+        &__container
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: flex-start
+
+            &-mobile
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: flex-end
+
+        &__logo
+            height: 67px
+            margin-right: 107px
+
+    &-menu
+
+        &__list
+            list-style: none
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+
+        &__item
+            font: normal normal bold 18px/27px Poppins
+            text-transform: uppercase
+            margin-right: 70px
+
+    &-burgermenu
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        height: 36px
+        cursor: pointer
+
+        &-active
+            transform: translateX(10px)
+
+            span:nth-child(1)
+                transform: rotate(45deg) translateY(22.3px)
+
+            span:nth-child(2)
+                display: none
+
+            span:nth-child(3)
+                transform: rotate(-45deg) translateY(-22.3px)
+
+        &-wrapper
+            margin-left: 40px
+
+            .App
+                &-menu
+
+                    &__list
+                        display: none
+                        flex-direction: column
+                        box-shadow: 0px 3px 6px #00000029
+                        width: 100%
+                        text-align: center
+                        background: #ffffff
+                        position: absolute
+                        z-index: 200
+                        top: 106px
+                        left: 0
+
+                    &__item
+                        margin-right: 0
+                        a
+                            display: block
+                            padding: 20px 20px
+                            position: relative
+                            z-index: 2000
+        span
+            height: 4px
+            width: 40px
+            background: #2a2a2a
+            transition: 0.2s all
+
+    &-home
+        background: linear-gradient(104deg, #00E4FE, #008BF6)
+        width: 100%
+        min-height: 604px
+        padding: 142px 284px 0
+        position: relative
+
+        &::after
+            content: ''
+            display: block
+            background: #ffffff
+            width: 100vw
+            position: absolute
+            left: 0
+            bottom: -1px
+            height: 205px
+            clip-path: polygon(100% 35%, 0% 100%, 100% 100%)
+
+        button
+            position: relative
+            padding: 8px 26px
+            background: #F6E224
+            z-index: 7
+
+            &:hover
+                background: #EE9C10
+
+        &__title
+            position: relative
+            font: normal normal 900 84px/125px Poppins
+            z-index: 7
+
+        &__subtitle
+            position: relative
+            font: normal normal bold 24px/35px Poppins
+            margin: 20px 0
+            z-index: 7
+
+        &__burger
+            position: absolute
+            height: 646px
+            top: 49px
+            right: 284px
+            z-index: 2
+
+    &-ingredients
+        padding: 240.81px 284px 0
+
+        &__title
+            text-align: center
+            margin-bottom: 20px
+
+        &__subtitle
+            text-align: center
+            max-width: 690px
+            margin: 0 auto
+
+        div.App-ingredients__container
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            margin: 50px 0
+            height: 250px
+            padding: 0 143px
+            overflow-x: scroll
+            scrollbar-width: none
+            position: relative
+
+            &-wrapper
+                position: relative
+
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+                    height: 100%
+                    width: calc(284px - 143px)
+                    left: -1px
+                    top: 0
+                    z-index: 2
+
+                &::after
+                    content: ''
+                    display: block
+                    position: absolute
+                    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+                    height: 100%
+                    width: calc(284px - 143px)
+                    right: -1px
+                    top: 0
+                    z-index: 2
+
+            &::-webkit-scrollbar
+                width: 0
+                height: 0
+
+        div.App-ingredients__card
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            width: 229px !important
+            height: 242px
+            text-align: center
+            padding: 20px 39px
+            margin-right: 52px
+            box-shadow: 0px 3px 6px #00000029
+            border-radius: 26px
+            background: #ffffff
+            user-select: none
+
+            &:last-child
+                margin-right: 0
+
+        &__img
+            height: 152px
+
+        &__name
+            font: normal normal bold 18px/27px Poppins
+            text-transform: capitalize
+
+        &__text
+            text-align: center
+            max-width: 65%
+            margin: 0 auto
+
+    &-thestory
+        display: flex
+        flex-direction: row
+        justify-content: center
+        padding: 150px 284px
+
+        &__container
+            flex: 1 1 calc(50% + 50px)
+            padding-right: 50px
+
+        &__title
+            margin-bottom: 20px
+
+        &__subtitle
+            margin-bottom: 50px
+
+        &__text
+
+        &__img
+            flex: 1 1 50%
+            background: url('../../../public/thestory.png')
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
+            border-radius: 30px
+
+    &-burgers
+        text-align: center
+        padding: 0 284px
+
+        &__title
+            margin-bottom: 50px
+
+        &__container
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: flex-start
+            margin-right: -16px
+            margin-bottom: 50px
+
+        &__card
+            display: flex
+            flex-direction: column
+            align-items: center
+            flex: 1 1 calc(100% / 3)
+            margin-right: 16px
+            padding: 20px
+            box-shadow: 0px 3px 6px #00000029
+            border-radius: 26px
+            background: #ffffff
+            //min-height: 408px
+
+        &__img
+            height: 207px
+            margin: 61px 0 42px
+
+        &__details
+            align-self: flex-end
+            font: normal normal bold 18px/27px Poppins
+            color: #008BF6
+            cursor: pointer
+            width: fit-content
+
+        &__ingredient
+            margin-top: 10px
+            font: normal normal normal 14px/21px Poppins
+
+            &-wrapper
+                display: none
+                align-self: flex-start
+                text-align: left
+                margin-top: 12px
+
+            &Title
+                font: normal normal bold 14px/21px Poppins
+
+    &-location
+        padding: 150px calc(284px + 246px)
+        text-align: center
+
+        &__title
+
+        &__container
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            margin: 30px 0
+
+        &__boldtext
+
+        &__text
+            font: normal normal normal 24px/35px Poppins
+
+        &__map
+            position: relative
+
+        &__img
+            width: 100%
+
+        &__loc
+            width: 36px
+
+            &-wrapper
+                top: 35.5%
+                left: 39%
+                background: #ffffff
+                border-radius: 100%
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                width: 50px
+                height: 50px
+                position: absolute
+
+    &-footer
+        background: #F5F5F5
+        padding: 15px 284px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        &__logo
+            height: 67px
+
+        &__info
+            text-align: right
+
+        &__boldtext
+            font: normal normal bold 14px/21px Poppins
+
+        &__text
+            margin-top: 5px
+            font: normal normal normal 14px/21px Poppins

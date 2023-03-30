@@ -1,0 +1,418 @@
+@media screen and (max-width: 1750px) {
+  .App-header {
+    padding: 29px 200px;
+  }
+  .App-home {
+    padding: 142px 200px 0;
+  }
+  .App-home__burger {
+    right: 200px;
+  }
+  .App-thestory {
+    padding: 150px 200px;
+  }
+  .App-burgers {
+    padding: 0 200px;
+  }
+  .App-footer {
+    padding: 15px 200px;
+  }
+  .App-location {
+    padding: 150px 300px;
+  }
+  .App-ingredients {
+    padding: 240.81px 200px 0;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .App-button {
+    font-size: 16px;
+  }
+  .App-header {
+    padding: 29px 130px;
+  }
+  .App-thestory {
+    padding: 150px 130px;
+  }
+  .App-home {
+    padding: 142px 130px 0;
+  }
+  .App-home__burger {
+    right: 130px;
+  }
+  .App-ingredients {
+    padding: 240.81px 130px 0;
+  }
+  .App-burgers {
+    padding: 0 130px;
+  }
+  .App-footer {
+    padding: 15px 130px;
+  }
+  .App-menu__item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .App-button {
+    font-size: 16px;
+  }
+  .App-location {
+    padding: 150px 186px;
+  }
+  .App-home {
+    padding: 142px 100px 0;
+  }
+  .App-home__burger {
+    right: 100px;
+  }
+  .App-ingredients {
+    padding: 240.81px 100px 0;
+  }
+  .App-thestory {
+    padding: 150px 100px;
+  }
+  .App-footer {
+    padding: 15px 100px;
+  }
+  .App-burgers {
+    padding: 0 100px;
+  }
+  .App-header {
+    padding: 29px 100px;
+  }
+  .App-header__logo {
+    margin-right: 70px;
+  }
+  .App-menu__item {
+    font-size: 16px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .App-button {
+    font-size: 15px;
+  }
+  .App-home {
+    padding: 142px 70px 0;
+  }
+  .App-home__burger {
+    right: 70px;
+  }
+  .App-location {
+    padding: 150px 116px;
+  }
+  .App-ingredients {
+    padding: 240.81px 70px 0;
+  }
+  .App-thestory {
+    padding: 150px 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .App-thestory__container {
+    flex: 1 1 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .App-thestory__img {
+    margin-top: 30px;
+    flex: none;
+    width: calc(100vw - 60px);
+    height: 68.448vw;
+  }
+  .App-burgers {
+    padding: 0 70px;
+  }
+  .App-burgers__img {
+    height: 160px;
+    margin: 41px 0 32px;
+  }
+  .App-footer {
+    padding: 15px 70px;
+  }
+  .App-header {
+    padding: 20px 70px;
+  }
+  .App-header__logo {
+    margin-right: 50px;
+  }
+  .App-menu__item {
+    font-size: 15px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .App-subtitle {
+    font-size: 20px;
+  }
+  .App-home__burger {
+    top: 10%;
+    right: -30%;
+  }
+  .App-ingredients {
+    padding: 210.81px 70px 0;
+  }
+  .App-ingredients div.App-ingredients__container {
+    padding: 0 100px;
+  }
+  .App-ingredients div.App-ingredients__container::before, .App-ingredients div.App-ingredients__container::after {
+    width: 70px;
+  }
+  .App-ingredients__card {
+    margin-right: 30px;
+  }
+  .App-ingredients__card:last-child {
+    margin-right: 0;
+  }
+  .App-burgers {
+    padding: 0 70px;
+  }
+  .App-burgers__subtitle {
+    font-size: 16px;
+  }
+  .App-burgers__img {
+    height: 110px;
+  }
+  .App-location {
+    padding: 120px 70px;
+  }
+  .App-location__container {
+    flex-direction: column;
+  }
+  .App-location__container p {
+    margin-bottom: 10px;
+  }
+  .App-location__container p:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .App-burgers__container {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .App-burgers__card {
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+  .App-burgers__subtitle {
+    font-size: 20px;
+  }
+  .App-burgers__img {
+    height: 150px;
+  }
+  .App-burgers__ingredient {
+    margin-top: 6px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .App-header {
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .App-title {
+    font-size: 45px;
+  }
+  .App-subtitle {
+    font-size: 20px;
+  }
+  .App-button {
+    padding: 7px 20px;
+  }
+  .App-header {
+    padding: 15px 30px;
+  }
+  .App-header__logo {
+    height: 39px;
+  }
+  .App-home {
+    padding: 142px 30px;
+  }
+  .App-home__burger {
+    top: 10%;
+    right: -30%;
+    height: 600px;
+  }
+  .App-ingredients {
+    padding: 210.81px 30px 0;
+  }
+  .App-ingredients div.App-ingredients__container {
+    padding: 0 40px;
+  }
+  .App-ingredients div.App-ingredients__container-wrapper::before, .App-ingredients div.App-ingredients__container-wrapper::after {
+    width: 70px;
+  }
+  .App-ingredients div.App-ingredients__container-wrapper::before {
+    left: -1px;
+  }
+  .App-ingredients div.App-ingredients__container-wrapper::after {
+    right: -1px;
+  }
+  .App-ingredients__card {
+    margin-right: 30px;
+  }
+  .App-ingredients__card:last-child {
+    margin-right: 0;
+  }
+  .App-ingredients__text {
+    max-width: 100%;
+  }
+  .App-thestory {
+    padding: 120px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .App-thestory__container {
+    flex: 1 1 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .App-thestory__img {
+    margin-top: 30px;
+    flex: none;
+    width: calc(100vw - 60px);
+    height: 68.448vw;
+  }
+  .App-burgers {
+    padding: 0px 30px;
+  }
+  .App-burgers__container {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .App-burgers__card {
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+  .App-burgers__ingredient {
+    margin-top: 6px;
+  }
+  .App-location {
+    padding: 120px 30px;
+  }
+  .App-location__loc-wrapper {
+    left: 35%;
+    top: 30%;
+    transform: scale(0.7);
+  }
+  .App-location__container {
+    flex-direction: column;
+  }
+  .App-location__container p {
+    margin-bottom: 10px;
+  }
+  .App-location__container p:last-child {
+    margin-bottom: 0;
+  }
+  .App-burgermenu {
+    height: 28px;
+  }
+  .App-burgermenu-active {
+    transform: translateX(7px);
+  }
+  .App-burgermenu-active span:nth-child(1) {
+    transform: rotate(45deg) translateY(17.5px);
+  }
+  .App-burgermenu-active span:nth-child(2) {
+    display: none;
+  }
+  .App-burgermenu-active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-17.5px);
+  }
+  .App-burgermenu-wrapper {
+    margin-left: 30px;
+  }
+  .App-burgermenu-wrapper .App-menu__list {
+    top: 70px;
+  }
+  .App-burgermenu span {
+    height: 3px;
+  }
+  .App-footer {
+    padding: 15px 30px;
+  }
+  .App-footer__logo {
+    height: 40px;
+  }
+  .App-footer p {
+    font-size: 12px;
+  }
+  .App-footer__text {
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .App-button {
+    padding: 10px 20px;
+    line-height: 1.1;
+  }
+  .App-title {
+    font: normal normal 900 36px/54px Poppins;
+  }
+  .App-subtitle {
+    font: normal normal bold 18px/26px Poppins;
+  }
+  .App-text {
+    font: normal normal normal 16px/23px Poppins;
+  }
+  .App-header__logo {
+    height: 34px;
+    margin-right: 12px;
+  }
+  .App-home__title {
+    font: normal normal 900 64px/75px Poppins;
+  }
+  .App-home__burger {
+    top: 25%;
+    right: -50%;
+    transform: scale(1.5);
+    height: auto;
+    width: 100%;
+  }
+  .App-location__loc-wrapper {
+    left: 32%;
+    top: 24%;
+    transform: scale(0.5);
+  }
+  .App-burgermenu span {
+    width: 30px;
+  }
+  .App-burgermenu-wrapper {
+    margin-left: 15px;
+  }
+  .App-burgermenu-wrapper .App-menu__list {
+    top: 65px;
+  }
+  .App-ingredients div.App-ingredients__container {
+    padding: 0 30px;
+  }
+  .App-ingredients div.App-ingredients__container-wrapper {
+    width: 100%;
+  }
+  .App-ingredients div.App-ingredients__container-wrapper::before, .App-ingredients div.App-ingredients__container-wrapper::after {
+    width: 30px;
+  }
+  .App-ingredients div.App-ingredients__container-wrapper::before {
+    left: -1px;
+  }
+  .App-ingredients div.App-ingredients__container-wrapper::after {
+    right: -1px;
+  }
+  .App-ingredients__card {
+    height: 220px;
+    margin-right: 12px;
+  }
+  .App-ingredients__img {
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
